@@ -1,6 +1,8 @@
 Synchronous-
 
 Asychronous-
-Callbacks
-Promises
+
+Callbacks-
+
+Promises-
 Async/Await
