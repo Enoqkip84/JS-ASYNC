@@ -1,5 +1,6 @@
 Synchronous-
-Asychronous
+
+Asychronous-
 Callbacks
 Promises
 Async/Await
