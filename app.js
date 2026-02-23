@@ -76,3 +76,24 @@ Example 3 - Making a soup - Assynchronous
 // boil water for 10 min
 // add carrots, boil for 5 min
 // Add onion boil for 5 min
+
+//BROWSER!!!! fetch data, Get Geolocation, setTimeout, setTimer e.t.c
+
+//Javascript talks to the browser on the stus of the code once it is not busy asking for the output which was running on the background.
+//time set out is the minimum, it could be longer depending with the javacript if busy or not. Incase JS is busy, it will take some time more than the minimum time stipulated.
+
+// boilWater(10000);
+// console.log('Chop Carrots');
+
+// function boilWater(time) {
+//   console.log('Boiling...');
+//   setTimeout(() => {
+//     console.log('Done Boiling water!');
+//   }, time);
+// }
+
+/*
+========================================================================
+CALLBACK HELL
+========================================================================
+*/
