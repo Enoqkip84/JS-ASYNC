@@ -109,12 +109,20 @@ CALLBACK HELL
 
 boilWater();
 console.log('Chop carrots');
-boilWater();
-console.log('Chop onion');
 
 function boilWater() {
   console.log('Boiling..');
   setTimeout(() => {
     console.log('Done');
+    console.log('add carrots');
+    setTimeout(() => {
+      console.log('Carrots done ');
+      console.log('add onions');
+
+      setTimeout(() => {
+        console.log('Onions done');
+      }, 5000);
+    }, 5000);
+    console.log('chop onions');
   }, 1000);
 }
