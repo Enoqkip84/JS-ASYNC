@@ -95,5 +95,7 @@ Example 3 - Making a soup - Assynchronous
 /*
 ========================================================================
 CALLBACK HELL
-========================================================================
+=========================================================================
+-handling how to handle data when it comes back from browser
+- using nested functions, and when it becomes to cluttered and unusable, we call this state Callback hell. 
 */
