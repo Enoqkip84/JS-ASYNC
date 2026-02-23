@@ -99,3 +99,22 @@ CALLBACK HELL
 -handling how to handle data when it comes back from browser
 - using nested functions, and when it becomes to cluttered and unusable, we call this state Callback hell. 
 */
+
+// Make soup
+// Boil water 10 min
+// Chop carrots
+// Add carrots boil for 5 min
+// chop onion
+// add onion, boil for 5 minutes
+
+boilWater();
+console.log('Chop carrots');
+boilWater();
+console.log('Chop onion');
+
+function boilWater() {
+  console.log('Boiling..');
+  setTimeout(() => {
+    console.log('Done');
+  }, 1000);
+}
