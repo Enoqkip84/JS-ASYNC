@@ -171,4 +171,10 @@ const promise = new Promise((Resolve, Reject) => {
   }
 });
 
-console.log(promise);
+promise
+  .then((taco) => {
+    console.log(taco);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
