@@ -107,22 +107,44 @@ CALLBACK HELL
 // chop onion
 // add onion, boil for 5 minutes
 
-boilWater();
-console.log('Chop carrots');
+// boilWater();
+// console.log('Chop carrots');
 
-function boilWater() {
-  console.log('Boiling..');
+// function boilWater() {
+//   console.log('Boiling..');
+//   setTimeout(() => {
+//     console.log('Done');
+//     console.log('add carrots');
+//     setTimeout(() => {
+//       console.log('Carrots done ');
+//       console.log('add onions');
+
+//       setTimeout(() => {
+//         console.log('Onions done');
+//       }, 5000);
+//     }, 5000);
+//     console.log('chop onions');
+//   }, 1000);
+// }
+
+/*
+========================================================================
+CALLBACK, PPROMISES, ASYNC/AWAIT 
+=========================================================================
+*/
+const heading1 = document.querySelector('.one');
+const heading2 = document.querySelector('.two');
+const heading3 = document.querySelector('.three');
+const button = document.querySelector('.btn');
+
+button.addEventListener('click', () => {
   setTimeout(() => {
-    console.log('Done');
-    console.log('add carrots');
+    heading1.style.color = 'red';
     setTimeout(() => {
-      console.log('Carrots done ');
-      console.log('add onions');
-
+      heading2.style.color = 'green';
       setTimeout(() => {
-        console.log('Onions done');
-      }, 5000);
-    }, 5000);
-    console.log('chop onions');
+        heading3.style.color = 'blue';
+      }, 1000);
+    }, 3000);
   }, 1000);
-}
+});
