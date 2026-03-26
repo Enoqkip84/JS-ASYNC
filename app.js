@@ -132,22 +132,22 @@ CALLBACK HELL
 CALLBACK, PPROMISES, ASYNC/AWAIT 
 =========================================================================
 */
-const heading1 = document.querySelector('.one');
-const heading2 = document.querySelector('.two');
-const heading3 = document.querySelector('.three');
-const button = document.querySelector('.btn');
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.two');
+// const heading3 = document.querySelector('.three');
+// const button = document.querySelector('.btn');
 
-button.addEventListener('click', () => {
-  setTimeout(() => {
-    heading1.style.color = 'red';
-    setTimeout(() => {
-      heading2.style.color = 'green';
-      setTimeout(() => {
-        heading3.style.color = 'blue';
-      }, 1000);
-    }, 3000);
-  }, 1000);
-});
+// button.addEventListener('click', () => {
+//   setTimeout(() => {
+//     heading1.style.color = 'red';
+//     setTimeout(() => {
+//       heading2.style.color = 'green';
+//       setTimeout(() => {
+//         heading3.style.color = 'blue';
+//       }, 1000);
+//     }, 3000);
+//   }, 1000);
+// });
 
 /*
 ========================================================================PROMISES
@@ -155,26 +155,26 @@ button.addEventListener('click', () => {
 -Pending, Resolved, Rejected
 -Then catch - Pass another callback
 */
-// const heading1 = document.querySelector('.one');
-// const heading2 = document.querySelector('.two');
-// const heading3 = document.querySelector('.three');
-// const btn = document.querySelector('.btn');
+const heading1 = document.querySelector('.one');
+const heading2 = document.querySelector('.two');
+const heading3 = document.querySelector('.three');
+const btn = document.querySelector('.btn');
 
-// btn.addEventListener('click', () => {});
+btn.addEventListener('click', () => {});
 
-// const promise = new Promise((Resolve, Reject) => {
-//   let value = true;
-//   if (value) {
-//     Resolve('Hey the value is resolved');
-//   } else {
-//     Reject(`There was error, value is false`);
-//   }
-// });
+const promise = new Promise((Resolve, Reject) => {
+  let value = false;
+  if (value) {
+    Resolve([0, 1, 2, 3]);
+  } else {
+    Reject([0, 4, 5, 6, 7]);
+  }
+});
 
-// promise
-//   .then((taco) => {
-//     console.log(taco);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+promise
+  .then((taco) => {
+    console.log(taco);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
