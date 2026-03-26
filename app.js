@@ -155,26 +155,46 @@ CALLBACK, PPROMISES, ASYNC/AWAIT
 -Pending, Resolved, Rejected
 -Then catch - Pass another callback
 */
-const heading1 = document.querySelector('.one');
-const heading2 = document.querySelector('.two');
-const heading3 = document.querySelector('.three');
-const btn = document.querySelector('.btn');
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.two');
+// const heading3 = document.querySelector('.three');
+// const btn = document.querySelector('.btn');
 
-btn.addEventListener('click', () => {});
+// btn.addEventListener('click', () => {});
 
-const promise = new Promise((Resolve, Reject) => {
-  let value = true;
-  if (value) {
-    Resolve('Hey the value is resolved');
-  } else {
-    Reject(`There was error, value is false`);
-  }
-});
+// const promise = new Promise((Resolve, Reject) => {
+//   let value = true;
+//   if (value) {
+//     Resolve('Hey the value is resolved');
+//   } else {
+//     Reject(`There was error, value is false`);
+//   }
+// });
 
-promise
-  .then((taco) => {
-    console.log(taco);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// promise
+//   .then((taco) => {
+//     console.log(taco);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// just a refresher
+boilWater();
+console.log('Chop carrot');
+
+function boilWater() {
+  console.log('Boiling ...');
+  setTimeout(() => {
+    console.log('Boiling water done!');
+    console.log('Add carrots');
+    console.log('Chopping onions');
+    setTimeout(() => {
+      console.log('Boiling carots done');
+      console.log('add onions');
+      setTimeout(() => {
+        console.log('Boiling onions,carrots for 10 mins done...');
+      }, 1000);
+    }, 5000);
+  }, 1000);
+}
