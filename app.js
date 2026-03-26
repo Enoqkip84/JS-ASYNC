@@ -132,22 +132,22 @@ CALLBACK HELL
 CALLBACK, PPROMISES, ASYNC/AWAIT 
 =========================================================================
 */
-// const heading1 = document.querySelector('.one');
-// const heading2 = document.querySelector('.two');
-// const heading3 = document.querySelector('.three');
-// const button = document.querySelector('.btn');
+const heading1 = document.querySelector('.one');
+const heading2 = document.querySelector('.two');
+const heading3 = document.querySelector('.three');
+const button = document.querySelector('.btn');
 
-// button.addEventListener('click', () => {
-//   setTimeout(() => {
-//     heading1.style.color = 'red';
-//     setTimeout(() => {
-//       heading2.style.color = 'green';
-//       setTimeout(() => {
-//         heading3.style.color = 'blue';
-//       }, 1000);
-//     }, 3000);
-//   }, 1000);
-// });
+button.addEventListener('click', () => {
+  setTimeout(() => {
+    heading1.style.color = 'red';
+    setTimeout(() => {
+      heading2.style.color = 'green';
+      setTimeout(() => {
+        heading3.style.color = 'blue';
+      }, 1000);
+    }, 3000);
+  }, 1000);
+});
 
 /*
 ========================================================================PROMISES
@@ -178,23 +178,3 @@ CALLBACK, PPROMISES, ASYNC/AWAIT
 //   .catch((err) => {
 //     console.log(err);
 //   });
-
-// just a refresher
-boilWater();
-console.log('Chop carrot');
-
-function boilWater() {
-  console.log('Boiling ...');
-  setTimeout(() => {
-    console.log('Boiling water done!');
-    console.log('Add carrots');
-    console.log('Chopping onions');
-    setTimeout(() => {
-      console.log('Boiling carots done');
-      console.log('add onions');
-      setTimeout(() => {
-        console.log('Boiling onions,carrots for 10 mins done...');
-      }, 1000);
-    }, 5000);
-  }, 1000);
-}
