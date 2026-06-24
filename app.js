@@ -163,11 +163,11 @@ const btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {});
 
 const promise = new Promise((Resolve, Reject) => {
-  let value = true;
+  let value = false;
   if (value) {
-    Resolve([0, 1, 2, 3]);
+    Resolve([1, 2, 4]);
   } else {
-    Reject([0, 4, 5, 6, 7]);
+    Reject(`there was an error, value is false`);
   }
 });
 
