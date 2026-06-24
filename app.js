@@ -163,7 +163,7 @@ const btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {});
 
 const promise = new Promise((Resolve, Reject) => {
-  let value = false;
+  let value = true;
   if (value) {
     Resolve([0, 1, 2, 3]);
   } else {
