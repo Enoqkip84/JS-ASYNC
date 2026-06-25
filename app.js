@@ -155,26 +155,51 @@ CALLBACK, PPROMISES, ASYNC/AWAIT
 -Pending, Resolved, Rejected
 -Then catch - Pass another callback
 */
+// const heading1 = document.querySelector('.one');
+// const heading2 = document.querySelector('.two');
+// const heading3 = document.querySelector('.three');
+// const btn = document.querySelector('.btn');
+
+// btn.addEventListener('click', () => {});
+
+// const promise = new Promise((Resolve, Reject) => {
+//   let value = false;
+//   if (value) {
+//     Resolve([1, 2, 4]);
+//   } else {
+//     Reject(`there was an error, value is false`);
+//   }
+// });
+
+// promise
+//   .then((taco) => {
+//     console.log(taco);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+/*
+  =================
+  Call back example
+  =================
+
+  */
 const heading1 = document.querySelector('.one');
 const heading2 = document.querySelector('.two');
 const heading3 = document.querySelector('.three');
 const btn = document.querySelector('.btn');
+const container = document.querySelector('.image-container');
+const url = 'https://images.unsplash.com/photo-1493558103817-58b2924bce98';
 
-btn.addEventListener('click', () => {});
+btn.addEventListener('click', () => {
+  console.log(loadImage(url));
 
-const promise = new Promise((Resolve, Reject) => {
-  let value = false;
-  if (value) {
-    Resolve([1, 2, 4]);
-  } else {
-    Reject(`there was an error, value is false`);
-  }
+  loadImage(url).then((data)=> console.log(data))
 });
 
-promise
-  .then((taco) => {
-    console.log(taco);
+function loadImage(url){
+  return new Promise ((resolve, reject)=>{
+    let img = new Image();
   })
-  .catch((err) => {
-    console.log(err);
-  });
+}
