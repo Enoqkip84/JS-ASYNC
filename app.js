@@ -189,7 +189,7 @@ const heading1 = document.querySelector('.one');
 const heading2 = document.querySelector('.two');
 const heading3 = document.querySelector('.three');
 const btn = document.querySelector('.btn');
-const container = document.querySelector('.image-container');
+const container = document.querySelector('.img-container');
 const url = 'https://images.unsplash.com/photo-1493558103817-58b2924bce98';
 
 btn.addEventListener('click', () => {
@@ -197,9 +197,32 @@ btn.addEventListener('click', () => {
 
   loadImage(url).then((data)=> console.log(data))
 });
-
+function loadImage(url){
+  /**
+   * Loads an image from the provided URL and resolves when the image has finished loading.
+   * This function creates an Image object, listens for load and error events, and returns a promise that represents the outcome.
+   *
+   * Args:
+   *   url: The URL string pointing to the image resource that should be loaded.
+   *
+   * Returns:
+   *   A Promise that resolves with the loaded HTMLImageElement when the image successfully loads,
+   *   or rejects with an Error if the image fails to load.
+   */
+  return new Promise ((resolve, reject)=>{
+    let img = new Image();
+    img.addEventListener('load', () => {
+      resolve(img);
+    });
+    img.addEventListener('error', () => {
+      reject(new Error('Failed to load image'));
+    });
+    img.src = url;
+  });
+}
 function loadImage(url){
   return new Promise ((resolve, reject)=>{
     let img = new Image();
+    img.addEventListener('load', )
   })
 }
