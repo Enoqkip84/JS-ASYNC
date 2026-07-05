@@ -6,7 +6,7 @@ const btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {});
 
 const promise = new Promise((Resolve, Reject) => {
-  let value = true;
+  let value = false;
   if (value) {
     Resolve([1, 2, 4]);
   } else {
